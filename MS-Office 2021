@@ -3,13 +3,13 @@ title Activate Microsoft Office 2021 (ALL versions) for FREE - MSGuides.com&cls&
 :skms
 if %i% GTR 10 goto busy
 if %i% EQU 1 set KMS=kms7.MSGuides.com
-if %i% EQU 2 set KMS=ms8.us.to
-if %i% EQU 3 set KMS=ms9.us.to
+if %i% EQU 2 set KMS=e8.us.to
+if %i% EQU 3 set KMS=e9.us.to
 if %i% GTR 3 goto ato
 cscript //nologo ospp.vbs /sethst:%KMS% >nul
 :ato
 echo =====================================================================================&echo.&echo.&cscript //nologo ospp.vbs /act | find /i "successful" && (echo.&echo =====================================================================================&echo.&echo #My official blog: MSGuides.com&echo.&echo #How it works: bit.ly/kms-server&echo.&echo #Please feel free to contact me at msguides.com@gmail.com if you have any questions or concerns.&echo.&echo #Please consider supporting this project: donate.msguides.com&echo #Your support is helping me keep my servers running 24/7!&echo.&echo =====================================================================================&choice /n /c YN /m "Would you like to visit my blog [Y,N]?" & if errorlevel 2 exit) || (echo The connection to my KMS server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto skms)
-explorer "http://youtube.com/Dhanvesh"&goto halt
+explorer "http://Youtube.com/Dhanvesh"&goto halt
 :notsupported
 echo =====================================================================================&echo.&echo Sorry, your version is not supported.&echo.&goto halt
 :busy
